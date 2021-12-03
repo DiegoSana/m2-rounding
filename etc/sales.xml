@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/sales.xsd">
+    <section name="quote">
+        <group name="totals">
+            <item name="grand_total_rounding" instance="Sofar\Rounding\Model\Quote\Address\Total\Rounding" sort_order="600" />
+        </group>
+    </section>
+    <section name="order_invoice">
+        <group name="totals">
+            <item name="grand_total_rounding" instance="Sofar\Rounding\Model\Invoice\Total\Rounding" sort_order="161"/>
+        </group>
+    </section>
+    <section name="order_creditmemo">
+        <group name="totals">
+            <item name="grand_total_rounding" instance="Sofar\Rounding\Model\Creditmemo\Total\Rounding" sort_order="160"/>
+        </group>
+    </section>
+</config>

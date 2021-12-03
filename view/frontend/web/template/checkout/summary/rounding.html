@@ -1,0 +1,8 @@
+<!-- ko if: isDisplayed() -->
+<tr class="totals grand_total_rounding">
+    <th class="mark" scope="row" data-bind="text: getTitle()"></th>
+    <td class="amount">
+        <span class="price" data-bind="text: getValue(), attr:{'data-label': getTitle()}"></span>
+    </td>
+</tr>
+<!-- /ko -->
